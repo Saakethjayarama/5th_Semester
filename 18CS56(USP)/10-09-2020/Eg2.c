@@ -11,13 +11,14 @@ int main()
     int i;
     for (i = 0; i < a; i++)
     {
-        scanf("%d", b[i]);
+        scanf("%d", &b[i]);
     }
+
     int sum = 0;
     for (i = 0; i < a; i++)
     {
         sum += b[i];
     }
     float avg = sum / a;
-    print("%f\n", avg);
+    print("%6.2f\n", avg);
 }
